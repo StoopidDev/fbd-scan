@@ -169,9 +169,9 @@ Return ONLY valid JSON (no markdown, no explanation):
         </div>
         <div className="phase-badge" data-phase={phase}>
           {phase === "idle" && "Ready"}
-          {phase === "camera" && "📷 Camera Active"}
-          {phase === "scanning" && "🔍 Analyzing..."}
-          {phase === "result" && "✅ Complete"}
+          {phase === "camera" && " Camera Active"}
+          {phase === "scanning" && " Analyzing..."}
+          {phase === "result" && " Complete"}
         </div>
       </header>
 
@@ -203,14 +203,14 @@ Return ONLY valid JSON (no markdown, no explanation):
                 value={userScenario}
                 onChange={(e) => setUserScenario(e.target.value)}
               />
-              <p className="scenario-hint">💡 This helps the AI pick the right forces!</p>
+              <p className="scenario-hint"> This helps the AI pick the right forces!</p>
             </div>
             <ScanButton onClick={handleScanStart} />
             <div className="examples-row">
-              <span>Try: 📦 Box</span>
-              <span>🏀 Ball</span>
-              <span>📱 Phone</span>
-              <span>☕ Cup</span>
+              <span>Try:  Box</span>
+              <span> Ball</span>
+              <span> Phone</span>
+              <span> Cup</span>
             </div>
           </div>
         )}
@@ -227,7 +227,7 @@ Return ONLY valid JSON (no markdown, no explanation):
                 <div className="scan-line"></div>
               </div>
             </div>
-            <p className="scanning-text">🧠 AI is analyzing forces...</p>
+            <p className="scanning-text"> AI is analyzing forces...</p>
             <p className="scanning-sub">Identifying object · Calculating forces · Building FBD</p>
           </div>
         )}
